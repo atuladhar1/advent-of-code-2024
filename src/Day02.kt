@@ -45,7 +45,7 @@ fun main() {
         listOf(1, 3, 6, 7, 9),
     )
 
-    val sols = listOf(
+    val solutions = listOf(
         true,
         false,
         false,
@@ -54,7 +54,7 @@ fun main() {
         true,
     )
 
-    lists.map { detectChange(it) }.zip(sols).map { (ans, sols) ->
+    lists.map { detectChange(it) }.zip(solutions).map { (ans, sols) ->
         check(ans == sols)
     }
 }
